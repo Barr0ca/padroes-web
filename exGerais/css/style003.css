@@ -1,0 +1,27 @@
+nav > ul > li{
+    display: inline;
+}
+nav > ul > li > a{
+   border: 1px solid darkblue;
+   padding: 5px 8px;
+   background-color:dodgerblue; 
+   border-radius: 10px;
+   text-decoration: none;
+   color: white;
+   margin-right: 20px;
+}
+main > section.noticias > a{
+    color:darkgoldenrod;
+}
+main > section.esporte > a{
+    color: green;
+}
+main > section.entretenimento > a{
+    color: brown;
+}
+main{
+    display: flex;
+}
+main > section{
+    max-width: 33.33%;
+}
