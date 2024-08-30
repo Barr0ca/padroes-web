@@ -1,0 +1,27 @@
+a:hover {
+    color: brown;
+}
+li > a + span {
+    display: none;
+}
+li > a:hover + span {
+    display: inline;
+}
+a + span {
+    border: solid 1px;
+    background-color: dimgray;
+    margin-left: 10px;
+    padding: 2px;
+}
+li:last-child > a {
+    color: black;
+}
+div.bloco > label + input:focus { 
+    border-color: green;
+}
+div.bloco {
+    margin-bottom: 10px;
+}
+div.bloco > label, div.bloco > input {
+    display: block;
+}
