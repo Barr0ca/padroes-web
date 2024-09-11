@@ -1,0 +1,39 @@
+header, header > nav {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+header > nav {
+    align-items: center;
+}
+main > section > .texto, main > section > img {
+    border: 1px solid black;
+    width: 50%;
+    height: auto;
+}
+main > section {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+main > section > .card {
+    border: 1px solid black;
+    width: 30%;
+    justify-content: center;
+}
+main > .galeria {
+    flex-flow: row wrap;
+}
+main > .galeria > img {
+    width: 49%;
+    margin: 1px;
+}
+@media (max-width: 768px) {
+    header, main > section {
+        flex-direction: column;
+    }
+    main > section > img, main > section > .texto, main > section > .card, main > .galeria > img {
+        width: 98%;
+        margin: 1px;
+    }
+}
