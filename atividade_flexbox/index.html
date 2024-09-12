@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade FlexBox</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Nome do Site</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <img src="https://via.placeholder.com/500x300" alt="Imagem Café">
-            <div class="texto">
-                <h2>Café</h2>
-                <p>"O café é uma das bebidas mais apreciadas em todo o planeta e é produzido dos grãos de café, a semente do fruto do cafeeiro. O cafeeiro é uma espécie originária da Etiópia que se difundiu por todo o mundo. Existem diferentes espécies de café, as quais fazem parte da família botânica Rubiaceae e do gênero Coffea."</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atividade FlexBox</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Nome do Site</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img
+                    src="https://via.placeholder.com/500x300"
+                    alt="Imagem Café"
+                />
+                <div class="texto">
+                    <h2>Café</h2>
+                    <p>
+                        "O café é uma das bebidas mais apreciadas em todo o
+                        planeta e é produzido dos grãos de café, a semente do
+                        fruto do cafeeiro. O cafeeiro é uma espécie originária
+                        da Etiópia que se difundiu por todo o mundo. Existem
+                        diferentes espécies de café, as quais fazem parte da
+                        família botânica Rubiaceae e do gênero Coffea."
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h3>Serviço 1</h3>
+                    <p>Descrição do serviço 1</p>
+                </div>
+                <div class="card">
+                    <h3>Serviço 2</h3>
+                    <p>Descrição do serviço 2</p>
+                </div>
+                <div class="card">
+                    <h3>Serviço 1</h3>
+                    <p>Descrição do serviço 2</p>
+                </div>
+            </section>
+            <section class="galeria">
+                <img src="https://via.placeholder.com/400" alt="Imagem" />
+                <img src="https://via.placeholder.com/400" alt="Imagem" />
+                <img src="https://via.placeholder.com/400" alt="Imagem" />
+                <img src="https://via.placeholder.com/400" alt="Imagem" />
+            </section>
+            <div class="artigos">
+                <section>
+                    <h1>Artigo 1</h1>
+                    <p>Conteúdo do artigo 1</p>
+                </section>
+                <section>
+                    <h1>Artigo 2</h1>
+                    <p>Conteúdo do artigo 2</p>
+                </section>
             </div>
-        </section>
-        <section>
-            <div class="card">
-                <h3>Serviço 1</h3>
-                <p>Descrição do serviço 1</p>
+        </main>
+        <form>
+            <div class="formulario">
+                <input type="text" name="nome" placeholder="Nome" />
+                <input type="text" name="email" placeholder="Email" />
+                <input
+                    type="text"
+                    name="mensagem"
+                    placeholder="Mensagem"
+                    class="mensagem"
+                />
+                <input type="button" value="Enviar" />
             </div>
-            <div class="card">
-                <h3>Serviço 2</h3>
-                <p>Descrição do serviço 2</p>
-            </div>
-            <div class="card">
-                <h3>Serviço 1</h3>
-                <p>Descrição do serviço 2</p>
-            </div>
-        </section>
-        <section class="galeria">
-            <img src="https://via.placeholder.com/400" alt="Imagem">
-            <img src="https://via.placeholder.com/400" alt="Imagem">
-            <img src="https://via.placeholder.com/400" alt="Imagem">
-            <img src="https://via.placeholder.com/400" alt="Imagem">
-        </section>
-    </main>
-</body>
+        </form>
+        <footer>
+            <a href="#">Facebook</a>
+            <a href="#">BlueSky</a>
+            <a href="#">LinkedIn</a>
+        </footer>
+    </body>
 </html>

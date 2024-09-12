@@ -1,17 +1,17 @@
-header, header > nav {
+header, header > nav, footer {
     display: flex;
     border: 1px solid black;
     justify-content: space-around;
 }
-header > nav {
+header > nav, footer {
     align-items: center;
 }
-main > section > .texto, main > section > img {
+main > section > .texto, main > section > img, main > .artigos > section {
     border: 1px solid black;
     width: 50%;
     height: auto;
 }
-main > section {
+main > section, main > .artigos {
     border: 1px solid red;
     display: flex;
     justify-content: space-around;
@@ -28,11 +28,30 @@ main > .galeria > img {
     width: 49%;
     margin: 1px;
 }
+main > .artigos {
+    flex-direction: row;
+}
+main > .artigos > section{
+    width: 45%;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+form > .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form > .formulario > input  {
+    margin: 3px;
+}
+
 @media (max-width: 768px) {
-    header, main > section {
+    header, main > section, main > .artigos, footer {
         flex-direction: column;
     }
-    main > section > img, main > section > .texto, main > section > .card, main > .galeria > img {
+    main > section > img, main > section > .texto, main > section > .card, main > .galeria > img, main > .artigos > section, form > .formulario {
         width: 98%;
         margin: 1px;
     }
