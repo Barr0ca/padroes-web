@@ -1,0 +1,67 @@
+header,
+header > nav,
+main,
+main > section,
+footer,
+footer > nav {
+    display: flex;
+}
+header,
+footer {
+    border: 1px solid black;
+    justify-content: space-around;
+}
+header > img {
+    width: 150px;
+    height: 60px;
+}
+header > img,
+main > .intro {
+    margin: 10px;
+}
+header > nav > a,
+main > .intro > button,
+footer > nav > a,
+footer > p {
+    margin: 5px;
+}
+header > nav,
+main {
+    align-items: center;
+}
+main {
+    flex-direction: column;
+}
+main > .intro {
+    width: 80%;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+}
+main > .galeria {
+    width: 80%;
+    justify-content: space-between;
+}
+main > .galeria > img {
+    width: 31%;
+}
+main > .comentarios {
+    width: 80%;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    header,
+    header > nav,
+    main > .galeria,
+    main > .comentarios,
+    footer,
+    footer > nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    main > .galeria > img {
+        width: 80%;
+        margin: 10px;
+    }
+}
